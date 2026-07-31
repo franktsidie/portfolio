@@ -89,7 +89,7 @@ const experience = [
     company: "EnBW-GNR · Philippsburg",
     bullets: [
       "Digitalisierung von Geschäftsprozessen und Einführung neuer IT-Lösungen.",
-      "Low-Code-/No-Code-Anwendungen, BI-Dashboards und fachliche Anforderungsanalyse."
+      "Low-Code-/No-Code-Anwendungen (Microsoft Power Platform), BI-Dashboards und fachliche Anforderungsanalyse."
     ]
   },
   {
