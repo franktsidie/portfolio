@@ -1,6 +1,6 @@
 # Portfolio – Frank Thierry Tsidie Kengni
 
-Persönliche Portfolio- und Bewerbungswebsite für Frank Thierry Tsidie Kengni, Business Solution Developer mit Fokus auf Prozessautomatisierung, Softwareentwicklung, dokumentenbasierte Workflows und datenbasierte Fachanwendungen.
+Persönliche Portfolio- und Bewerbungswebsite von Frank Thierry Tsidie Kengni, Business Solution Developer mit Fokus auf Prozessautomatisierung, Softwareentwicklung, dokumentenbasierte Workflows und datenbasierte Fachanwendungen.
 
 ## Live
 
@@ -14,20 +14,5 @@ Persönliche Portfolio- und Bewerbungswebsite für Frank Thierry Tsidie Kengni, 
 - statische Veröffentlichung über GitHub Pages
 - keine Tracking-Skripte und keine Cookies
 
-## Lokal starten
 
-```bash
-pnpm install
-pnpm dev
-```
 
-Produktionsbuild:
-
-```bash
-pnpm build
-```
-
-Der Build erzeugt:
-
-- `dist/` für OpenAI Sites
-- `docs/` für GitHub Pages
