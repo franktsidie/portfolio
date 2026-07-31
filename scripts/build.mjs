@@ -32,10 +32,11 @@ const [pagesCss, pagesJs] = await Promise.all([
   readFile(`docs/${stylesheetMatch[1]}`, "utf8"),
   readFile(`docs/${scriptMatch[1]}`, "utf8"),
 ]);
+const inlinePagesJs = pagesJs.replaceAll("</script", "<\\/script");
 
 pagesHtml = pagesHtml
-  .replace(stylesheetMatch[0], `<style>${pagesCss}</style>`)
-  .replace(scriptMatch[0], `<script type="module">${pagesJs}</script>`);
+  .replace(stylesheetMatch[0], () => `<style>${pagesCss}</style>`)
+  .replace(scriptMatch[0], () => `<script type="module">${inlinePagesJs}</script>`);
 
 await writeFile(pagesHtmlPath, pagesHtml);
 await rm("docs/assets", { recursive: true, force: true });
